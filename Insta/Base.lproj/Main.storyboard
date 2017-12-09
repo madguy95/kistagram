@@ -429,7 +429,7 @@
         <!--Main-->
         <scene sceneID="nPS-sK-jkf">
             <objects>
-                <tabBarController title="Main" id="wtG-2l-bMj" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainScreenID" title="Main" id="wtG-2l-bMj" customClass="MainViewController" customModule="Insta" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="W0Y-hQ-FUe"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tdZ-4L-KZw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>

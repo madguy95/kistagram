@@ -12,8 +12,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let post: PostTableCell = PostTableCell()
-        post.news = Status()
+//        let post: PostTableCell = PostTableCell()
+//        post.news = Status()
         // Do any additional setup after loading the view.
     }
 

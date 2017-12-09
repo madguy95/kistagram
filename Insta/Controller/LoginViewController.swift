@@ -35,9 +35,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
   
+    @IBAction func dismiss_onclick(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func buttonClick(_ sender: Any) {
-        print("ok")
-        loginButton.setTitle("ok", for: .normal)
+        self.present(MainViewController(), animated: true, completion: nil)
     }
 
 

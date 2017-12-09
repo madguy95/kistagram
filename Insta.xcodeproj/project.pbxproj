@@ -22,6 +22,7 @@
 		A839C5DF1FD70FA000915EEB /* StatusTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839C5DE1FD70FA000915EEB /* StatusTableController.swift */; };
 		A84AAA0D1FD40CD000D21209 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84AAA0C1FD40CD000D21209 /* GoogleService-Info.plist */; };
 		A8A6527B1FD980F500A370D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6527A1FD980F500A370D8 /* HomeViewController.swift */; };
+		A8D3BA3F1FDC3530000F1AA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D3BA3E1FDC3530000F1AA0 /* MainViewController.swift */; };
 		A8D7FB0F1FD5A78000EB3857 /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D7FB0E1FD5A78000EB3857 /* PostTableCell.swift */; };
 		A8D7FB181FD5D63C00EB3857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D7FB171FD5D63C00EB3857 /* ProfileViewController.swift */; };
 		A8F596391FDA3DA4009F2AD3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F596381FDA3DA4009F2AD3 /* DemoViewController.swift */; };
@@ -86,6 +87,7 @@
 		A839C5DE1FD70FA000915EEB /* StatusTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableController.swift; sourceTree = "<group>"; };
 		A84AAA0C1FD40CD000D21209 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8A6527A1FD980F500A370D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A8D3BA3E1FDC3530000F1AA0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8D7FB0E1FD5A78000EB3857 /* PostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
 		A8D7FB171FD5D63C00EB3857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A8F596381FDA3DA4009F2AD3 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				A839C5DE1FD70FA000915EEB /* StatusTableController.swift */,
 				A8A6527A1FD980F500A370D8 /* HomeViewController.swift */,
 				A8F596381FDA3DA4009F2AD3 /* DemoViewController.swift */,
+				A8D3BA3E1FDC3530000F1AA0 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,10 +494,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Insta/Pods-Insta-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle,
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -537,6 +540,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-f0850809/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -548,6 +552,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -564,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F670851FD6502B00929D92 /* ImageCollectionViewCell.swift in Sources */,
+				A8D3BA3F1FDC3530000F1AA0 /* MainViewController.swift in Sources */,
 				A81F19AD1FCFD14900F19FE0 /* LoginViewController.swift in Sources */,
 				A839C5DF1FD70FA000915EEB /* StatusTableController.swift in Sources */,
 				A839C5D91FD6EC3700915EEB /* Status.swift in Sources */,
