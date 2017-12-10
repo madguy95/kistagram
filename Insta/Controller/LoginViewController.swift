@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    func addUserLogin(username: String, password: String){
+    func registerNewUser(username: String, password: String){
         var ref: DatabaseReference!
         ref = Database.database().reference(fromURL: "https://kistagram-e91ec.firebaseio.com/")
         ref.updateChildValues(["name/user" : "adasd"])
@@ -35,13 +35,10 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
   
-    @IBAction func dismiss_onclick(_ sender: Any) {
+    @IBAction func dismiss_onClick(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func buttonClick(_ sender: Any) {
-        self.present(MainViewController(), animated: true, completion: nil)
     }
-
-
 }
 

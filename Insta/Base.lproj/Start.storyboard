@@ -40,81 +40,84 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username or email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wRJ-Cw-C2E">
-                                        <rect key="frame" x="10" y="52" width="261" height="36"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.094245158450704219" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8EA-u3-TCR">
-                                        <rect key="frame" x="10" y="98" width="261" height="36"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-UZ-vMz">
-                                        <rect key="frame" x="10" y="154" width="261" height="36"/>
-                                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="Log In">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtY-bX-68p"/>
-                                        </connections>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-Ya-HJF">
-                                        <rect key="frame" x="10" y="190" width="261" height="26.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H19-eu-MYi">
+                                        <rect key="frame" x="10" y="52" width="261" height="164.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUm-dX-hvJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="151" height="26.5"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Forgotten your login details?">
-                                                        <attributes>
-                                                            <font key="NSFont" metaFont="cellTitle"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-J1-SOs">
-                                                <rect key="frame" x="151" y="0.0" width="110" height="26.5"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Get Help Signing In">
-                                                            <attributes>
-                                                                <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                <integer key="NSUnderline" value="1"/>
-                                                                <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wRJ-Cw-C2E">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="36"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.094245158450704219" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8EA-u3-TCR">
+                                                <rect key="frame" x="0.0" y="46" width="261" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-UZ-vMz">
+                                                <rect key="frame" x="0.0" y="92" width="261" height="36"/>
+                                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtY-bX-68p"/>
+                                                    <segue destination="t3i-RG-D0i" kind="presentation" id="xZD-np-dg8"/>
+                                                </connections>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-Ya-HJF">
+                                                <rect key="frame" x="0.0" y="138" width="261" height="26.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUm-dX-hvJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="26.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Forgotten your login details?">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-J1-SOs">
+                                                        <rect key="frame" x="130.5" y="0.0" width="130.5" height="26.5"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Get Help Signing In">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                        <integer key="NSUnderline" value="1"/>
+                                                                        <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mcD-Ya-HJF" firstAttribute="width" secondItem="GX8-UZ-vMz" secondAttribute="width" id="IGT-t1-zwf"/>
+                                            <constraint firstItem="8EA-u3-TCR" firstAttribute="width" secondItem="wRJ-Cw-C2E" secondAttribute="width" id="ZGw-jY-asP"/>
+                                            <constraint firstItem="GX8-UZ-vMz" firstAttribute="width" secondItem="8EA-u3-TCR" secondAttribute="width" id="lja-or-iIB"/>
+                                            <constraint firstItem="GX8-UZ-vMz" firstAttribute="height" secondItem="8EA-u3-TCR" secondAttribute="height" id="op7-ru-kip"/>
+                                            <constraint firstItem="8EA-u3-TCR" firstAttribute="height" secondItem="wRJ-Cw-C2E" secondAttribute="height" id="tNL-WJ-246"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="wRJ-Cw-C2E" firstAttribute="leading" secondItem="1X8-jx-4ON" secondAttribute="leading" constant="10" id="0dQ-xF-qZl"/>
-                                    <constraint firstItem="mcD-Ya-HJF" firstAttribute="top" secondItem="GX8-UZ-vMz" secondAttribute="bottom" id="3qr-WS-Q1Y"/>
                                     <constraint firstItem="HcW-Jm-cNR" firstAttribute="top" secondItem="1X8-jx-4ON" secondAttribute="top" id="8F4-Tc-4ek"/>
-                                    <constraint firstItem="8EA-u3-TCR" firstAttribute="centerX" secondItem="1X8-jx-4ON" secondAttribute="centerX" id="8o1-fv-rdk"/>
-                                    <constraint firstItem="8EA-u3-TCR" firstAttribute="top" secondItem="wRJ-Cw-C2E" secondAttribute="bottom" constant="10" id="DNO-y7-YgN"/>
-                                    <constraint firstItem="mcD-Ya-HJF" firstAttribute="width" secondItem="GX8-UZ-vMz" secondAttribute="width" id="H3u-fZ-8Oa"/>
-                                    <constraint firstItem="mcD-Ya-HJF" firstAttribute="centerX" secondItem="1X8-jx-4ON" secondAttribute="centerX" id="KiQ-7b-aB6"/>
-                                    <constraint firstItem="GX8-UZ-vMz" firstAttribute="top" secondItem="8EA-u3-TCR" secondAttribute="bottom" constant="20" id="N9D-hu-hll"/>
-                                    <constraint firstItem="8EA-u3-TCR" firstAttribute="width" secondItem="wRJ-Cw-C2E" secondAttribute="width" id="P5o-wl-KvK"/>
-                                    <constraint firstItem="8EA-u3-TCR" firstAttribute="height" secondItem="wRJ-Cw-C2E" secondAttribute="height" id="VPb-M3-tYG"/>
+                                    <constraint firstItem="H19-eu-MYi" firstAttribute="centerX" secondItem="1X8-jx-4ON" secondAttribute="centerX" id="8RT-bS-D3c"/>
                                     <constraint firstItem="HcW-Jm-cNR" firstAttribute="centerX" secondItem="1X8-jx-4ON" secondAttribute="centerX" id="WPW-GP-LgH"/>
-                                    <constraint firstItem="wRJ-Cw-C2E" firstAttribute="centerX" secondItem="1X8-jx-4ON" secondAttribute="centerX" id="eUd-f5-0lS"/>
-                                    <constraint firstItem="GX8-UZ-vMz" firstAttribute="width" secondItem="8EA-u3-TCR" secondAttribute="width" id="nEa-Cv-kLA"/>
-                                    <constraint firstItem="GX8-UZ-vMz" firstAttribute="height" secondItem="8EA-u3-TCR" secondAttribute="height" id="qqM-oz-poN"/>
-                                    <constraint firstItem="GX8-UZ-vMz" firstAttribute="centerX" secondItem="1X8-jx-4ON" secondAttribute="centerX" id="t1s-LC-j30"/>
-                                    <constraint firstItem="wRJ-Cw-C2E" firstAttribute="top" secondItem="HcW-Jm-cNR" secondAttribute="bottom" constant="20" id="wJR-Ch-qxd"/>
+                                    <constraint firstItem="H19-eu-MYi" firstAttribute="top" secondItem="HcW-Jm-cNR" secondAttribute="bottom" constant="20" id="msk-bP-3aq"/>
+                                    <constraint firstItem="H19-eu-MYi" firstAttribute="leading" secondItem="1X8-jx-4ON" secondAttribute="leading" constant="10" id="oCa-ce-rYh"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-HD-xTe">
@@ -127,7 +130,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvN-6z-C8S">
-                                        <rect key="frame" x="62" y="14.5" width="157" height="30"/>
+                                        <rect key="frame" x="61.5" y="14.5" width="157" height="30"/>
                                         <state key="normal" title="Login in with Facebook"/>
                                     </button>
                                 </subviews>
@@ -240,21 +243,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-7i-beQ">
                                         <rect key="frame" x="0.0" y="52" width="282" height="174"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username or email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-4D-E5S">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-4D-E5S">
                                                 <rect key="frame" x="0.0" y="0.0" width="282" height="36"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.094245158450000005" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R6k-wc-gsH">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R6k-wc-gsH">
                                                 <rect key="frame" x="0.0" y="46" width="282" height="36"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="re-type password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qcq-qw-ZMI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-type password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qcq-qw-ZMI">
                                                 <rect key="frame" x="0.0" y="92" width="282" height="36"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
@@ -294,13 +297,13 @@
                                 <rect key="frame" x="47" y="470.5" width="281" height="146.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________OR________________________" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tt6-dU-10v">
-                                        <rect key="frame" x="4" y="0.0" width="274.5" height="14.5"/>
+                                        <rect key="frame" x="3.5" y="0.0" width="274.5" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-6I-PTN">
-                                        <rect key="frame" x="62" y="14.5" width="157" height="30"/>
+                                        <rect key="frame" x="61.5" y="14.5" width="157" height="30"/>
                                         <state key="normal" title="Login in with Facebook"/>
                                     </button>
                                 </subviews>
@@ -339,7 +342,8 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <action selector="dismiss_onclick:" destination="VQ9-qh-PJD" eventType="touchUpInside" id="eul-bl-Xjp"/>
+                                                    <action selector="dismiss_onClick:" destination="VQ9-qh-PJD" eventType="touchUpInside" id="cXE-5z-d1R"/>
+                                                    <action selector="dismiss_onclick:" destination="8xQ-L9-Bxk" eventType="touchUpInside" id="8Kc-q3-lZf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -384,6 +388,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHk-xN-IWi" sceneMemberID="firstResponder"/>
+                <exit id="8xQ-L9-Bxk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="682.5" y="1298.2394366197184"/>
         </scene>

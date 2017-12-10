@@ -22,6 +22,8 @@
 		A839C5DF1FD70FA000915EEB /* StatusTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839C5DE1FD70FA000915EEB /* StatusTableController.swift */; };
 		A84AAA0D1FD40CD000D21209 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84AAA0C1FD40CD000D21209 /* GoogleService-Info.plist */; };
 		A8A6527B1FD980F500A370D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6527A1FD980F500A370D8 /* HomeViewController.swift */; };
+		A8ADBD471FDCEFB800ADE6B6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ADBD461FDCEFB800ADE6B6 /* RegisterViewController.swift */; };
+		A8ADBD491FDD052A00ADE6B6 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8ADBD481FDD052A00ADE6B6 /* Demo.storyboard */; };
 		A8D3BA3F1FDC3530000F1AA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D3BA3E1FDC3530000F1AA0 /* MainViewController.swift */; };
 		A8D7FB0F1FD5A78000EB3857 /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D7FB0E1FD5A78000EB3857 /* PostTableCell.swift */; };
 		A8D7FB181FD5D63C00EB3857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D7FB171FD5D63C00EB3857 /* ProfileViewController.swift */; };
@@ -87,6 +89,8 @@
 		A839C5DE1FD70FA000915EEB /* StatusTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableController.swift; sourceTree = "<group>"; };
 		A84AAA0C1FD40CD000D21209 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8A6527A1FD980F500A370D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A8ADBD461FDCEFB800ADE6B6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A8ADBD481FDD052A00ADE6B6 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
 		A8D3BA3E1FDC3530000F1AA0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8D7FB0E1FD5A78000EB3857 /* PostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
 		A8D7FB171FD5D63C00EB3857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				A81F19AA1FCFD14900F19FE0 /* AppDelegate.swift */,
 				A81F19AE1FCFD14900F19FE0 /* Start.storyboard */,
 				A8F5963F1FDA630A009F2AD3 /* Main.storyboard */,
+				A8ADBD481FDD052A00ADE6B6 /* Demo.storyboard */,
 				A8D7FB101FD5A7BF00EB3857 /* Views */,
 				A81F19B11FCFD14900F19FE0 /* Assets.xcassets */,
 				A81F19B31FCFD14900F19FE0 /* LaunchScreen.storyboard */,
@@ -235,6 +240,7 @@
 				A8A6527A1FD980F500A370D8 /* HomeViewController.swift */,
 				A8F596381FDA3DA4009F2AD3 /* DemoViewController.swift */,
 				A8D3BA3E1FDC3530000F1AA0 /* MainViewController.swift */,
+				A8ADBD461FDCEFB800ADE6B6 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 				A84AAA0D1FD40CD000D21209 /* GoogleService-Info.plist in Resources */,
 				A81F19B21FCFD14900F19FE0 /* Assets.xcassets in Resources */,
 				A81F19B01FCFD14900F19FE0 /* Start.storyboard in Resources */,
+				A8ADBD491FDD052A00ADE6B6 /* Demo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +578,7 @@
 				A8F670851FD6502B00929D92 /* ImageCollectionViewCell.swift in Sources */,
 				A8D3BA3F1FDC3530000F1AA0 /* MainViewController.swift in Sources */,
 				A81F19AD1FCFD14900F19FE0 /* LoginViewController.swift in Sources */,
+				A8ADBD471FDCEFB800ADE6B6 /* RegisterViewController.swift in Sources */,
 				A839C5DF1FD70FA000915EEB /* StatusTableController.swift in Sources */,
 				A839C5D91FD6EC3700915EEB /* Status.swift in Sources */,
 				A839C5D71FD6EAC600915EEB /* User.swift in Sources */,

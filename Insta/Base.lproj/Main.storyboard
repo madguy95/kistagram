@@ -36,9 +36,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jutst a girl and her camera. Nature ,animals, food " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMw-Su-odn">
-                                        <rect key="frame" x="81.5" y="94.5" width="213" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jutst a girl and her camera. Nature ,animals, food " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMw-Su-odn" userLabel="descriptionLabel">
+                                        <rect key="frame" x="92.5" y="94.5" width="191" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -169,6 +169,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="user-32" id="eWO-7m-4HC"/>
                     <connections>
+                        <outlet property="disLabel" destination="cMw-Su-odn" id="lEv-SI-nlV"/>
                         <outlet property="profileImageView" destination="WQK-xW-RpY" id="tTZ-Qm-LtH"/>
                     </connections>
                 </viewController>
@@ -624,11 +625,11 @@
             </objects>
             <point key="canvasLocation" x="278.39999999999998" y="125.93703148425789"/>
         </scene>
-        <!--Item-->
+        <!--Activity-->
         <scene sceneID="SRR-QB-32w">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vnK-Zf-O92" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gUy-eP-YnO"/>
+                    <tabBarItem key="tabBarItem" title="Activity" image="icon-ios7-heart-outline-32" id="gUy-eP-YnO"/>
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9fT-fg-InD">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

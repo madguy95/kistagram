@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class DemoViewController: UIViewController {
+import XLPagerTabStrip
+class DemoViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

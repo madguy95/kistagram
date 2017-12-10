@@ -1,22 +1,18 @@
 //
-//  ProfileViewController.swift
+//  RegisterViewController.swift
 //  Insta
 //
-//  Created by Nguyen Xuan Tinh on 12/5/17.
+//  Created by Nguyen Xuan Tinh on 12/10/17.
 //  Copyright © 2017 Nguyen Xuan Tinh. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
-    @IBOutlet weak var disLabel: UILabel!
-    @IBOutlet weak var profileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
-        self.profileImageView.clipsToBounds = true;
-    self.disLabel.adjustsFontSizeToFitWidth = false;
+
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +21,10 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func dismiss_onclick(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
