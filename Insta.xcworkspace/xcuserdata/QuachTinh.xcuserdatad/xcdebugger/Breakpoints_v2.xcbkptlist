@@ -26,13 +26,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Insta/Controller/ProfileViewController.swift"
-            timestampString = "534576187.244017"
+            timestampString = "534591595.118762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Insta/Controller/DemoViewController.swift"
+            timestampString = "534591595.118854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Insta.DemoViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Insta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/resetpass/XcodeProject/Insta/Insta/Controller/DemoViewController.swift"
+                  timestampString = "534591595.381594"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "2760">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;XLPagerTabStrip.ButtonBarViewCell&gt;, Swift.Optional&lt;XLPagerTabStrip.ButtonBarViewCell&gt;, CoreGraphics.CGFloat, Swift.Bool, Swift.Bool) -&gt; () in Insta.DemoViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Insta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/resetpass/XcodeProject/Insta/Insta/Controller/DemoViewController.swift"
+                  timestampString = "534591595.3844"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

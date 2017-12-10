@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S30-uc-o90">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="LMq-ed-Opf">
+            <objects>
+                <viewController title="Search" id="S30-uc-o90" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="whb-N0-8TZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-KQ-t3t">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="S30-uc-o90" id="sil-ma-qtg"/>
+                                </connections>
+                            </searchBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AA5-MB-heF">
+                                <rect key="frame" x="0.0" y="135" width="375" height="483"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TvY-AJ-iEj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="483"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0nq-WP-z4p">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TvY-AJ-iEj" secondAttribute="trailing" id="7xw-O0-d5V"/>
+                                    <constraint firstItem="TvY-AJ-iEj" firstAttribute="top" secondItem="AA5-MB-heF" secondAttribute="top" id="BsO-PM-lHH"/>
+                                    <constraint firstItem="TvY-AJ-iEj" firstAttribute="centerY" secondItem="AA5-MB-heF" secondAttribute="centerY" id="UmF-Ad-OaC"/>
+                                    <constraint firstItem="TvY-AJ-iEj" firstAttribute="leading" secondItem="AA5-MB-heF" secondAttribute="leading" id="dr9-EX-vnO"/>
+                                    <constraint firstItem="TvY-AJ-iEj" firstAttribute="centerX" secondItem="AA5-MB-heF" secondAttribute="centerX" id="nuZ-yJ-aAd"/>
+                                    <constraint firstAttribute="bottom" secondItem="TvY-AJ-iEj" secondAttribute="bottom" id="qZb-bm-ULd"/>
+                                </constraints>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9EL-0I-fPJ">
+                                <rect key="frame" x="0.0" y="76" width="375" height="59"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PmO-KQ-t3t" firstAttribute="width" secondItem="whb-N0-8TZ" secondAttribute="width" id="0N3-VO-y1G"/>
+                            <constraint firstItem="PmO-KQ-t3t" firstAttribute="top" secondItem="bdX-l8-hsd" secondAttribute="top" id="2Dn-93-rRn"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="bottom" secondItem="bdX-l8-hsd" secondAttribute="bottom" id="4Db-g6-zcY"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="leading" secondItem="9EL-0I-fPJ" secondAttribute="leading" id="AxS-s5-2ud"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="trailing" secondItem="9EL-0I-fPJ" secondAttribute="trailing" id="Ffo-uA-UR7"/>
+                            <constraint firstItem="9EL-0I-fPJ" firstAttribute="top" secondItem="PmO-KQ-t3t" secondAttribute="bottom" id="IiX-Wb-KIF"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="leading" secondItem="PmO-KQ-t3t" secondAttribute="leading" id="JXn-ta-wQl"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="trailing" secondItem="PmO-KQ-t3t" secondAttribute="trailing" id="Kak-ZI-lnb"/>
+                            <constraint firstItem="bdX-l8-hsd" firstAttribute="top" secondItem="PmO-KQ-t3t" secondAttribute="firstBaseline" id="Ylg-7S-wAD"/>
+                            <constraint firstItem="PmO-KQ-t3t" firstAttribute="width" secondItem="bdX-l8-hsd" secondAttribute="width" id="Z8W-Jv-fUG"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="top" secondItem="9EL-0I-fPJ" secondAttribute="bottom" id="dFE-Gv-FAN"/>
+                            <constraint firstItem="AA5-MB-heF" firstAttribute="top" secondItem="whb-N0-8TZ" secondAttribute="top" constant="135" id="gl9-m5-p04"/>
+                            <constraint firstItem="PmO-KQ-t3t" firstAttribute="centerX" secondItem="bdX-l8-hsd" secondAttribute="centerX" id="pBf-Ea-1t2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bdX-l8-hsd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="search-1" id="JEs-yr-wh9">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="f9V-aF-hoT" id="9JH-WT-dSS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdA-p9-Y58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="f9V-aF-hoT">
+                    <connections>
+                        <outlet property="delegate" destination="S30-uc-o90" id="ehj-sq-8Cx"/>
+                        <outlet property="searchContentsController" destination="S30-uc-o90" id="k23-DC-WPv"/>
+                        <outlet property="searchResultsDataSource" destination="S30-uc-o90" id="X7Z-EQ-OSn"/>
+                        <outlet property="searchResultsDelegate" destination="S30-uc-o90" id="UBI-V7-5RV"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1764" y="125"/>
+        </scene>
+        <!--Instagram Example View Controller-->
+        <scene sceneID="6Dc-MZ-qq3">
+            <objects>
+                <viewController id="TEz-fr-Hzo" customClass="InstagramExampleViewController" customModule="Insta" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rA2-E3-ijK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nE0-js-M6s">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="TEz-fr-Hzo" id="vHW-hD-M03"/>
+                                </connections>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-Be-roI" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="76" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UKP-tl-hTS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vHe-b5-nwW">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OB7-wD-olx">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nE0-js-M6s" firstAttribute="centerX" secondItem="SfL-Vf-45Q" secondAttribute="centerX" id="3wh-i5-fTv"/>
+                            <constraint firstItem="OB7-wD-olx" firstAttribute="bottom" secondItem="SfL-Vf-45Q" secondAttribute="bottom" id="B0a-si-LCZ"/>
+                            <constraint firstItem="OB7-wD-olx" firstAttribute="top" secondItem="HHx-Be-roI" secondAttribute="bottom" id="HbE-Jj-TfW"/>
+                            <constraint firstItem="nE0-js-M6s" firstAttribute="width" secondItem="rA2-E3-ijK" secondAttribute="width" id="UQz-jy-amF"/>
+                            <constraint firstItem="SfL-Vf-45Q" firstAttribute="trailing" secondItem="OB7-wD-olx" secondAttribute="trailing" id="XZq-ms-Ugr"/>
+                            <constraint firstItem="nE0-js-M6s" firstAttribute="top" secondItem="SfL-Vf-45Q" secondAttribute="top" id="cQO-Go-5Nc"/>
+                            <constraint firstItem="HHx-Be-roI" firstAttribute="top" secondItem="nE0-js-M6s" secondAttribute="bottom" id="qHf-Jf-kzn"/>
+                            <constraint firstItem="OB7-wD-olx" firstAttribute="leading" secondItem="SfL-Vf-45Q" secondAttribute="leading" id="r7H-8A-Ofb"/>
+                            <constraint firstItem="HHx-Be-roI" firstAttribute="centerX" secondItem="SfL-Vf-45Q" secondAttribute="centerX" id="ted-K9-rwJ"/>
+                            <constraint firstItem="HHx-Be-roI" firstAttribute="width" secondItem="rA2-E3-ijK" secondAttribute="width" id="uMI-PE-6Ei"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SfL-Vf-45Q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icon-ios7-heart-outline-32" id="EdT-7Z-dJ5">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="buttonBarView" destination="HHx-Be-roI" id="buk-o2-shf"/>
+                        <outlet property="containerView" destination="OB7-wD-olx" id="6ss-yc-h4F"/>
+                        <outlet property="searchDisplayController" destination="PvT-HM-JFu" id="AjZ-n5-fpc"/>
+                        <outlet property="shadowView" destination="OB7-wD-olx" id="jmw-vC-Sh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15s-qz-Q23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="PvT-HM-JFu">
+                    <connections>
+                        <outlet property="delegate" destination="TEz-fr-Hzo" id="tbi-9q-7Rx"/>
+                        <outlet property="searchBar" destination="nE0-js-M6s" id="zDc-Gi-3EF"/>
+                        <outlet property="searchContentsController" destination="TEz-fr-Hzo" id="TsU-ha-15K"/>
+                        <outlet property="searchResultsDataSource" destination="TEz-fr-Hzo" id="Uil-UH-Hin"/>
+                        <outlet property="searchResultsDelegate" destination="TEz-fr-Hzo" id="LAu-Mx-oF3"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1764" y="813"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-ios7-heart-outline-32" width="32" height="32"/>
+        <image name="search-1" width="24" height="24"/>
+    </resources>
+</document>
