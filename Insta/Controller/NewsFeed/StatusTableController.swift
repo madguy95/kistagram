@@ -8,87 +8,56 @@
 
 import UIKit
 
-class StatusTableController: UITableViewController {
-
+struct Data {
+    var ava : UIImage
+    var name: String
+    var time: String
+    var location: String
+    var image: UIImage
+    var caption: String
+}
+class StatusTableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let postArrays =
+        [Data(ava: #imageLiteral(resourceName: "Ned_Flanders"),name: "Christna Sanchez",time: "2 days ago",location: "⌾ Hanoi,Viet Nam",image: #imageLiteral(resourceName: "photo"), caption: "\"Hope begins in the dark, the stubborn hope that if you just show up and try to do the right thing, the da…\"Hope begins in the dark, the stubborn hope that if you just show up and try to do the right thing, the da…"),
+        Data(ava: #imageLiteral(resourceName: "Lisa_Simpsons"),name: "Cristiano Ronaldo",time: "4 days ago",location: "⌾ Portugal",image: #imageLiteral(resourceName: "photo"), caption: " asdassssssss")]
+    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+        tableView.delegate = self
+        tableView.dataSource = self
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return postArrays.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsFeedCell", for: indexPath) as! PostTableCell
 
         // Configure the cell...
-
+        cell.userImageView.image = postArrays[indexPath.row].ava
+        cell.userTiltleButton.titleLabel?.text = postArrays[indexPath.row].name
+        cell.timeLineStatusLabel.text = postArrays[indexPath.row].time
+        cell.locationStatusLabel.text = postArrays[indexPath.row].location
+        cell.statusImageView.image = postArrays[indexPath.row].image
+        cell.caption.text = postArrays[indexPath.row].caption
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return view.frame.width + 50 + 50
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return view.frame.width + 50 + 80
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

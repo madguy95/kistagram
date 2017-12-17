@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJc-Jz-Gvk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJc-Jz-Gvk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
         <!--Kistagram-->
         <scene sceneID="301-fY-srh">
             <objects>
-                <viewController id="7jV-KA-bFd" customClass="HomeViewController" customModule="Insta" sceneMemberID="viewController">
+                <viewController id="7jV-KA-bFd" customClass="StatusTableController" customModule="Insta" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rep-zN-GIr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,14 +140,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="a" destination="qyB-qv-pds" id="uHz-Lf-Sf2"/>
-                                            <outlet property="caption" destination="vng-Wd-LEp" id="mTO-xB-yrI"/>
-                                            <outlet property="contentStatus" destination="Meo-CQ-Ixf" id="Bt8-a0-WlD"/>
-                                            <outlet property="locationStatusLabel" destination="qhZ-D3-7XH" id="8Nf-u2-QUE"/>
-                                            <outlet property="timeLineStatusLabel" destination="fr3-eq-YtJ" id="Zqr-z2-40P"/>
-                                            <outlet property="userImageView" destination="gx7-3V-1Cp" id="r8B-Uk-E5P"/>
-                                            <outlet property="userTiltleButton" destination="U9v-F9-fPW" id="gAu-DS-Wt3"/>
-                                            <outlet property="videoDemo" destination="Meo-CQ-Ixf" id="h20-r7-TT0"/>
+                                            <outlet property="caption" destination="vng-Wd-LEp" id="ApN-eJ-XLg"/>
+                                            <outlet property="locationStatusLabel" destination="qhZ-D3-7XH" id="3Rs-an-Qfw"/>
+                                            <outlet property="statusImageView" destination="Meo-CQ-Ixf" id="LIm-lp-aDD"/>
+                                            <outlet property="timeLineStatusLabel" destination="fr3-eq-YtJ" id="WVH-2x-YWA"/>
+                                            <outlet property="userImageView" destination="gx7-3V-1Cp" id="Y57-Cx-bfd"/>
+                                            <outlet property="userTiltleButton" destination="U9v-F9-fPW" id="oFr-3t-0jc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,6 +165,9 @@
                         <viewLayoutGuide key="safeArea" id="RVE-Yz-3M9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Kistagram" id="xEh-Hh-oVy"/>
+                    <connections>
+                        <outlet property="tableView" destination="0pr-g2-doc" id="B5G-J0-V7d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhB-GN-OdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
